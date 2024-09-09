@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Bruno Ace SC", cursive;
+}
+body{
+    overflow-x: hidden;
+}
+html{
+    scroll-behavior: smooth;
+}
+h1 {
+ text-align: center;
+ color: black; 
+
+}
+.section-background {
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+  height: 100vh;
+  width: 100%;
+  color: #ffffff;
+  display: flex;
+  justify-content: center;
+
+}
+ .parallax {
+  background-image: url(img1.avif);
+}
+.parallax1 {
+  background-image: url(img4.avif);
+}
+.parallax2 {
+  background-image: url(img3.avif);
+}
+
+.pups li{
+    list-style: none;
+}
+.pups{
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+}
+.pups ul{
+    display: flex;
+    gap: 2em;
+} 
+ .pups a{
+    text-decoration: none;
+    color: black;
+}
+.text-bloc{
+    margin-top: 10%;
+    width: 60%;
+    height: 60vh;
+    display:flex;
+    flex-direction: row;
+    gap:10%;
+    align-items: center;
+    background-color: white;
+}
+.text-bloc img{
+    margin-left: 10%;
+    height: 30vh;
+    border-radius: 10px;
+}
+.play p{
+    color: black;
+    margin-left: 10%;
+} 
+    </style>
+</head>
+<body>
+    <main>
+        
+    <section class="section-background parallax" id="Play pups">
+        <div class="pups">
+            <h1>Adorable puppies</h1>
+            <ul>
+            <li><a href="#Play pups">Play pups</a></li>
+            <li><a href="#Sleepy pups">Sleepy pups</a></li>
+            <li><a href="#Curious pups">Curious pups</a></li></ul>
+        </div> 
+         <div class="text-bloc">
+             <div class="img">
+             <img src="img1.avif">
+             </div>
+             <div class="play">
+                 <h1>Playful puppies</h1>
+                 <p>Puppies love to play! It shows they learn about world and develpment skills</p>
+             </div>
+        <div>  
+        </section>
+            <section class="section-background parallax1"  id="Sleepy pups">
+                 
+                 <div class="text-bloc">
+                     
+                     <div class="play">
+                         <h1>Sleepy puppies</h1>
+                         <p>Puppies love to play! It shows they learn about world and develpment skills</p>
+                     </div>
+                     <div class="img">
+                        <img src="img4.avif">
+                        </div>
+                <div>
+            </section>
+                <section class="section-background parallax2"  id="Curious pups">
+                
+                     <div class="text-bloc">
+                         <div class="img">
+                         <img src="img3.avif">
+                         </div>
+                         <div class="play">
+                             <h1>curious puppies</h1>
+                             <p>Puppies love to play! It shows they learn about world and develpment skills</p>
+                         </div>
+                    <div>
+                </section>     
+      </main>
+</body>
+</html>
